@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  font-size: 1.4rem;
+}
+header nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+header img {
+  width: 15%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-link {
+  text-decoration: none;
+  color: forestgreen;
+}
+.nav-link:visited {
+  text-decoration: none;
+  color: forestgreen;
+}

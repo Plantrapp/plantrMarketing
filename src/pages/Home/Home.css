@@ -1,0 +1,23 @@
+img {
+  width: 50%;
+}
+.opaque {
+  /* opacity: 0.6; */
+  background-image: url("../../assets/images/vegetables-752153_1920.jpg");
+  height: 40vh;
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  /* filter: brightness(60%); */
+}
+#motto {
+  font-size: 2.4rem;
+  opacity: 1;
+}
