@@ -17,9 +17,14 @@ header img {
 }
 .nav-link {
   text-decoration: none;
-  color: forestgreen;
+  color: #1ac197;
+  font-family: "Marketing Script";
 }
 .nav-link:visited {
   text-decoration: none;
-  color: forestgreen;
+  color: #1ac197;
+}
+.plantr {
+  width: 10%;
+  object-fit: contain;
 }

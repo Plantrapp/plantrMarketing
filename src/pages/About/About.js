@@ -4,36 +4,41 @@ export default function About() {
   return (
     <div>
       <h1>About Plantr</h1>
-      <h3>Our Goals</h3>
-      <h4>We want to make it easier to live a sustainable lifestyle.</h4>
+      <h3>Our Mission</h3>
+      <h4>Feed Yourself. Feed the World.</h4>
       <p>
-        What is Plantr? Plantr is an Application that you can soon use on your
-        own device. This app will be for BOTH Permaculture Experts and those who
-        would like to use their services. It's a new platform to connect people
-        who want an organic food growing garden designed, and even maintained by
-        a local expert- All for a simple monthly subscription. The more you use
-        the app, the services found on the app, and share the food you grow from
-        your very own garden, the more points and discounts you receive!
-        Designers, Gardeners, Builders and Landscaping Professionals - This will
-        help you reach new customers. Share your talents and skills. Show
-        examples of your work. Get more projects. Network with other
-        Permaculture Experts. Homeowners, Hobby Gardeners and those in need of a
-        little help with your yard - This will help you get to know the experts
-        in your area and streamline your shopping experience. Save time. Find
-        the perfect fit and get the job done in time to enjoy your new garden.
-        You can grow your very own organic food, thanks to Plantr ! How will it
-        work? Everyone on the platform creates a simple profile. You share your
-        goals and dreams, or goods and services. You meet others who can help.
-        This entitles you to special rewards and discounts. You can even donate
-        excess food you’ve grown yourself to local food banks and earn points
-        for future discounts. The more you use the app, the more you share, the
-        more discounts and points you receive. There is so much more to tell you
-        about Plantr . Become a Patron to be the first to learn more. Why is
-        this app so important? Growing your own food is not only good for you
-        and your family’s health, it’s also good for our environment. Wholesome
-        and organic food is a basic human right. Everyone should have access to
-        it. Our current system is not working. Your small garden can not only be
-        a solution to ending hunger in our community, one veggie at a time, but
+        Plantr is a web and mobile application to connect both Permaculture
+        "(clickable defining Permaculture)" experts and those who would like to
+        use their services. Clients can use the platform to find a local expert
+        to design and maintain an organic food growing garden, for a monthly
+        subscription.
+      </p>
+      <h3>Designers, Gardeners, Builders and Landscaping Professionals</h3>{" "}
+      <p>
+        Reach new customers. Share your talents and skills. Show examples of
+        your work. Get more projects. Network with other Permaculture Experts.
+      </p>
+      <h3>
+        Homeowners, Hobby Gardeners and those in need of a little help with your
+        yard
+      </h3>
+      <p>
+        This will help you get to know the experts in your area and streamline
+        your shopping experience. Save time. Find the perfect fit and get the
+        job done in time to enjoy your new garden. You can grow your very own
+        organic food, thanks to Plantr ! How will it work? Everyone on the
+        platform creates a simple profile. You share your goals and dreams, or
+        goods and services. You meet others who can help. This entitles you to
+        special rewards and discounts. You can even donate excess food you’ve
+        grown yourself to local food banks and earn points for future discounts.
+        The more you use the app, the more you share, the more discounts and
+        points you receive. There is so much more to tell you about Plantr .
+        Become a Patron to be the first to learn more. Why is this app so
+        important? Growing your own food is not only good for you and your
+        family’s health, it’s also good for our environment. Wholesome and
+        organic food is a basic human right. Everyone should have access to it.
+        Our current system is not working. Your small garden can not only be a
+        solution to ending hunger in our community, one veggie at a time, but
         Thanks to Plantr , we can all make a difference. You may be surprised at
         how current large scale farming harms our air, our land and our water.
         I’ll be sharing more information with all my Patrons about the
