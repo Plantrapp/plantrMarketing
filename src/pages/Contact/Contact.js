@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 export default function Contact() {
   return (
     <div>
-      <h1>Contact Us</h1>
+      <h1 className="plantrFont">Contact Us</h1>
       <a href="mailto:plantrappofficial@gmail.com">Email Us</a>
       <a href="tel:5418108414">Call us at 541-810-8414</a>
       <a

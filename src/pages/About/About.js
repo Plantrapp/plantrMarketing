@@ -3,9 +3,9 @@ import React from "react";
 export default function About() {
   return (
     <div>
-      <h1>About Plantr</h1>
-      <h3>Our Mission</h3>
-      <h4>Feed Yourself. Feed the World.</h4>
+      <h1 className="plantrFont">About Plantr</h1>
+      <h3 className="plantrFont">Our Mission</h3>
+      <h4 className="plantrFont">Feed Yourself. Feed the World.</h4>
       <p>
         Plantr is a web and mobile application to connect both Permaculture
         "(clickable defining Permaculture)" experts and those who would like to
@@ -13,12 +13,14 @@ export default function About() {
         to design and maintain an organic food growing garden, for a monthly
         subscription.
       </p>
-      <h3>Designers, Gardeners, Builders and Landscaping Professionals</h3>{" "}
+      <h3 className="plantrFont">
+        Designers, Gardeners, Builders and Landscaping Professionals
+      </h3>{" "}
       <p>
         Reach new customers. Share your talents and skills. Show examples of
         your work. Get more projects. Network with other Permaculture Experts.
       </p>
-      <h3>
+      <h3 className="plantrFont">
         Homeowners, Hobby Gardeners and those in need of a little help with your
         yard
       </h3>
@@ -52,8 +54,8 @@ export default function About() {
         sharing your ideas and feedback. We will be building Plantr together!
         Donate to our Patreon today, let’s cultivate the change.
       </p>
-      <h3>Meet the Team</h3>
-      <h4>Founder: Shane Davis </h4>
+      <h3 className="plantrFont">Meet the Team</h3>
+      <h4 className="plantrFont">Founder: Shane Davis </h4>
       <p>
         Shane Davis is a Marine Corps Veteran with a background in security
         working with HMX-1. During his time in the service, Shane’s travels
