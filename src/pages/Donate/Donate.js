@@ -4,7 +4,7 @@ import { FaPatreon } from "react-icons/fa";
 export default function Donate() {
   return (
     <div>
-      <h1>Donate</h1>
+      <h1 className="plantrFont">Donate</h1>
       <p>
         Help us grow quicker by donating a few bucks a month. We appreciate all
         the help we can get!
