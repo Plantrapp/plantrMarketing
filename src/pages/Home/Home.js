@@ -1,18 +1,47 @@
 import React from "react";
 // import vegetables from "../../assets/images/vegetables-752153_1920.jpg";
 import "./Home.css";
-import NavBar from "../../components/NavBar/NavBar";
+import Styled from "styled-components";
+
+const HomeStyled = Styled.div`
+background-image: url("../../assets/images/landing-page-img.png");
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: center;
+img {
+  width: 50%;
+}
+.opaque {
+  /* opacity: 0.6; */
+  height: 40vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  /* filter: brightness(60%); */
+}
+#motto {
+  font-size: 2.4rem;
+  opacity: 1;
+  font-family:MarketingScript
+}
+
+`;
 
 export default function Home() {
   return (
-    <div>
+    <HomeStyled className="landing-backdrop">
       {/* <img className="opaque" src={vegetables} /> */}
       <div className="opaque">
-        <NavBar />
         <h3 className="plantrFont">Let nature work for you</h3>
         <p>
-          Here at Plantr, we believe that everyone should have access to
-          sustainable gardens that are good for your wallet and the environment.
+          Here at Plantr,
+          <br />
+          we believe that everyone should have access to sustainable gardens
+          that are good for your wallet and the environment.
         </p>
       </div>
       <h2 className="plantrFont">Why Plantr?</h2>
@@ -42,6 +71,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-    </div>
+    </HomeStyled>
   );
 }
