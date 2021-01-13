@@ -18,7 +18,7 @@ header img {
 .nav-link {
   text-decoration: none;
   color: #1ac197;
-  font-family: "Marketing Script";
+  font-family: MarketingScript;
 }
 .nav-link:visited {
   text-decoration: none;

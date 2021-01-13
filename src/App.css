@@ -105,8 +105,11 @@ h3 {
 h4 {
   font-size: 2rem;
 }
-
+@font-face {
+  font-family: MarketingScript;
+  src: url("./assets/fonts/MarketingScript.ttf");
+}
 .plantrFont {
   color: #1ac197;
-  font-family: "Marketing Script";
+  font-family: MarketingScript;
 }

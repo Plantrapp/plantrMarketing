@@ -5,7 +5,6 @@ img {
   background-image: url("../../assets/images/vegetables-752153_1920.jpg");
   height: 100vh;
   background-position: center;
-  object-fit: cover;
   width: 100%;
   display: flex;
   flex-direction: column;
