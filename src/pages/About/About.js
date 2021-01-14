@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import Sam from "../../assets/images/samPic.png";
+import Zave from "../../assets/images/zavePic.jpg";
 
 export default function About() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
   return (
     <div>
       <h1 className="plantrFont">About Plantr</h1>
+      <h3>Meet the Team</h3>
+      <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel.Item interval={3000}>
+          <img src={Sam} />
+          <Carousel.Caption>
+            <h3>Samuel Brown</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={3000}>
+          <img src={Zave} />
+          <Carousel.Caption>
+            <h3>Zavier Guadalupe</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
       <h3 className="plantrFont">Our Mission</h3>
       <h4 className="plantrFont">Feed Yourself. Feed the World.</h4>
       <p>
