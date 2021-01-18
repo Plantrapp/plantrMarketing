@@ -121,6 +121,7 @@ h4 {
 }
 .btn-primary {
   background-color: #1ac197;
+  /* background-color: #1ac19788; */
   border-color: white;
   font-family: "Nunito", sans-serif;
 }
