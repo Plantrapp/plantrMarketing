@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Sam from "../../assets/images/samPic.png";
 import Zave from "../../assets/images/zavePic.jpg";
+import Shane from "../../assets/images/shaneDavis.jpg";
+import "./About.css";
 
 export default function About() {
   const [index, setIndex] = useState(0);
@@ -15,19 +17,30 @@ export default function About() {
       <h1 className="plantrFont">About Plantr</h1>
       <h3>Meet the Team</h3>
       <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item interval={3000}>
-          <img src={Sam} />
+        <Carousel.Item interval={10000}>
+          <img className="avatar" src={Sam} />
           <Carousel.Caption>
-            <h3>Samuel Brown</h3>
+            <h3 className="plantrFont">Samuel Brown</h3>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={3000}>
-          <img src={Zave} />
+        <Carousel.Item>
+          <img className="avatar" src={Zave} />
           <Carousel.Caption>
-            <h3>Zavier Guadalupe</h3>
+            <h3 className="plantrFont">Zavier Guadalupe</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="avatar" src={Shane} />
+          <Carousel.Caption>
+            <h3 className="plantrFont">Shane Davis</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <div className="avatarSelect">
+        <img src={Sam} />
+        <img src={Zave} />
+        <img src={Shane} />
+      </div>
       <h3 className="plantrFont">Our Mission</h3>
       <h4 className="plantrFont">Feed Yourself. Feed the World.</h4>
       <p>

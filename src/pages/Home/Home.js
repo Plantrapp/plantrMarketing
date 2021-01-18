@@ -2,6 +2,8 @@ import React from "react";
 // import vegetables from "../../assets/images/vegetables-752153_1920.jpg";
 import "./Home.css";
 import NavBar from "../../components/NavBar/NavBar";
+import { FaSeedling, FaCoins, FaCheckDouble } from "react-icons/fa";
+import vineyard from "../../assets/images/vineyard-428041_1920.jpg";
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
       <div className="why">
         <div>
           <h3 className="plantrFont">Easy</h3>
+          <FaCheckDouble size={50} />
           {/* <p>
             Download the Plantr App *insert links to app store and google store*
           </p>
@@ -31,14 +34,47 @@ export default function Home() {
         </div>
         <div>
           <h3 className="plantrFont">Sustainable</h3>
+          <FaSeedling size={50} />
         </div>
         <div>
           <h3 className="plantrFont">Cost Effective</h3>
+          <FaCoins size={50} />
           <p>
             No more wasting water on dying grass. Instead, use your water to
             grow the garden of your dreams! It takes less water and you can grow
             your very own fruits and vegetables, which means savings on your
             water and grocery bills!
+          </p>
+        </div>
+      </div>
+      <h2 className="plantrFont">How does it work?</h2>
+      <div className="how">
+        <div className="outer-1">
+          <img src={vineyard} />
+          <div className="inner right">
+            <h3 className="plantrFont">Create an account</h3>
+            <p>
+              Create a Plantr account and sign up as a Plantr if you're looking
+              to connect with clients or a Growr if you're looking to hire
+              talent.
+            </p>
+            <button>Sign up</button>
+          </div>
+        </div>
+        <div>
+          <h3 className="plantrFont right">Connect with others</h3>
+          <p>
+            Whether you're looking to market your permaculture skills or hire
+            someone to help you get started in permaculture, connect with others
+            in your area to achieve your goals.
+          </p>
+        </div>
+        <div>
+          <h3 className="plantrFont">GUILDS</h3>
+          <p>
+            For Plantrs who have big projects that are too much for one person
+            to handle, form a GUILD with other Plantrs to work towards a common
+            goal.
           </p>
         </div>
       </div>

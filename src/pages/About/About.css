@@ -1,0 +1,19 @@
+.avatar {
+  width: 50%;
+  filter: brightness(80%);
+}
+
+.avatarSelect {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+}
+.avatarSelect img {
+  width: 10%;
+  border-radius: 100%;
+}
+
+/* .selected {
+  border: 2px solid white;
+} */
