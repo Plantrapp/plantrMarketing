@@ -1,10 +1,11 @@
 import React from "react";
 import { FaPatreon } from "react-icons/fa";
 
-export default function Donate() {
+export default function Support() {
   return (
     <div className="content">
-      <h1 className="plantrFont">Donate</h1>
+      <h1 className="plantrFont">Support Us</h1>
+      <h3 className="plantrFont">Donate</h3>
       <p>
         Help us grow quicker by donating a few bucks a month. We appreciate all
         the help we can get!
@@ -18,6 +19,13 @@ export default function Donate() {
         </a>
         <p>Become a patron</p>
       </button>
+      <h3 className="plantrFont">Shop</h3>
+      <p>
+        Support Plantr and pick up some sweet gear at the same time! Visit our
+        shop
+      </p>
+      <a></a>
+      <button>Shop</button>
     </div>
   );
 }

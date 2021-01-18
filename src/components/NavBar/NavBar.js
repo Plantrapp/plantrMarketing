@@ -30,7 +30,7 @@ export default function NavBar() {
           activeStyle={activeStyle}
           className="nav-link"
         >
-          Support
+          Support Us
         </NavLink>
       </nav>
     </header>

@@ -121,6 +121,7 @@ h4 {
 }
 .btn-primary {
   background-color: #1ac197;
+  /* background-color: #1ac19788; */
   border-color: white;
   font-family: "Nunito", sans-serif;
 }
@@ -133,7 +134,7 @@ p {
 .high-emphasis {
   color: rgba(255, 255, 255, 0.87);
 }
-.med-emphasis {
+.mid-emphasis {
   color: rgba(255, 255, 255, 0.6);
 }
 .disabled {
