@@ -34,34 +34,49 @@ img {
   text-align: left;
 }
 .how {
-  /* width: 80%; */
+  width: 90%;
+  margin: 0 auto;
   min-height: 40vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  /* justify-content: space-between; */
 }
 .how div {
   flex-basis: 25%;
 }
-.outer-1 {
-  /* background-image: url("../../assets/images/vineyard-428041_1920.jpg"); */
-  /* background-position: center; */
-  /* max-width: 30%; */
-  overflow: visible;
-  /* height: 30vh; */
-  margin-left: 5%;
+.outer {
+  /* margin-left: 25%; */
   display: flex;
   align-items: center;
+  padding: 2% 0;
+  justify-content: center;
 }
-.outer-1 img {
+.outer img {
   width: 40%;
+  border-radius: 10px;
+}
+.inner {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 60%;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1%;
+  z-index: 2;
+}
+.inner > p {
+  text-align: left;
+  margin-bottom: 4%;
+}
+section {
+  padding-top: 2%;
 }
 
-.inner {
+.right {
   margin-left: -5%;
-  background-color: rgba(34, 139, 34, 0.863);
-
-  overflow: visible;
-  width: 60%;
+}
+.left {
+  margin-right: -5%;
+}
+.title {
+  padding-top: 2%;
 }
