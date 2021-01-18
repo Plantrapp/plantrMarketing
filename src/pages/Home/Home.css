@@ -21,3 +21,35 @@ img {
 .why div {
   flex-basis: 20%;
 }
+.how {
+  /* width: 80%; */
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.how div {
+  flex-basis: 25%;
+}
+.outer-1 {
+  /* background-image: url("../../assets/images/vineyard-428041_1920.jpg"); */
+  /* background-position: center; */
+  /* max-width: 30%; */
+  overflow: visible;
+  /* height: 30vh; */
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+.outer-1 img {
+  width: 40%;
+}
+
+.inner {
+  margin-left: -5%;
+  background-color: rgba(34, 139, 34, 0.863);
+
+  overflow: visible;
+  width: 60%;
+}

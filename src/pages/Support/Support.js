@@ -4,7 +4,13 @@ import { FaPatreon } from "react-icons/fa";
 export default function Donate() {
   return (
     <div>
-      <h1 className="plantrFont">Donate</h1>
+      <h1 className="plantrFont">Support</h1>
+      <h3 className="plantrFont">Shop</h3>
+      Help Plantr get off the ground by purchasing some of our gear!
+      <a href="https://teespring.com/stores/plantr?page=1" target="_blank">
+        Plantr Shop
+      </a>
+      <h3 className="plantrFont">Donate</h3>
       <p>
         Help us grow quicker by donating a few bucks a month. We appreciate all
         the help we can get!

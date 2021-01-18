@@ -10,7 +10,7 @@ const activeStyle = {
 export default function NavBar() {
   return (
     <header>
-      <img class="plantr" src={fullLogo} />
+      <img className="plantr" src={fullLogo} />
       <nav>
         <NavLink to="/" activeStyle={activeStyle} className="nav-link">
           Home
@@ -26,14 +26,11 @@ export default function NavBar() {
           Contact
         </NavLink>
         <NavLink
-          to="/nav/donate"
+          to="/nav/support"
           activeStyle={activeStyle}
           className="nav-link"
         >
-          Donate
-        </NavLink>
-        <NavLink to="/nav/shop" activeStyle={activeStyle} className="nav-link">
-          Shop
+          Support
         </NavLink>
       </nav>
     </header>
