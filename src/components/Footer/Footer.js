@@ -39,22 +39,37 @@ export default function Footer() {
       <Container>
         <Row>
           <Col>
-            <NavLink to="/nav/about" className="link-featureless">
+            <NavLink to="/nav/about" className="link-featureless bold">
               About
             </NavLink>
           </Col>
           <Col>
-            <NavLink to="/nav/contact" className="link-featureless">
+            <NavLink to="/nav/contact" className="link-featureless bold">
               Contact
             </NavLink>
           </Col>
           <Col>
-            <NavLink to="/nav/donate" className="link-featureless">
+            <NavLink to="/nav/support" className="link-featureless bold">
+              Support
+            </NavLink>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col></Col>
+          <Col></Col>
+          <Col>
+            <NavLink to="/nav/support" className="link-featureless">
               Donate
             </NavLink>
           </Col>
+        </Row>
+
+        <Row>
+          <Col></Col>
+          <Col></Col>
           <Col>
-            <NavLink to="/nav/shop" className="link-featureless">
+            <NavLink to="/nav/support" className="link-featureless">
               Shop
             </NavLink>
           </Col>
