@@ -8,32 +8,6 @@ import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   const [formValue, setFormValue] = useState("");
-
-  /*
-<NavLink to="/" activeStyle={activeStyle} className="nav-link">
-  Home
-</NavLink>
-<NavLink to="/nav/about" activeStyle={activeStyle} className="nav-link">
-  About
-</NavLink>
-<NavLink
-  to="/nav/contact"
-  activeStyle={activeStyle}
-  className="nav-link"
->
-  Contact
-</NavLink>
-<NavLink
-  to="/nav/donate"
-  activeStyle={activeStyle}
-  className="nav-link"
->
-  Donate
-</NavLink>
-<NavLink to="/nav/shop" activeStyle={activeStyle} className="na
-  Shop
-</NavLink>
-*/
   return (
     <footer>
       <Container>

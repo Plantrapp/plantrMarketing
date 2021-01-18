@@ -52,7 +52,7 @@ export default function Home() {
 
       <hr />
 
-      <h2 className="plantrFont title">How does it work?</h2>
+      <h2 className="plantrFont">How does it work?</h2>
       <section className="how">
         <div className="outer">
           <img src={vineyard} />
