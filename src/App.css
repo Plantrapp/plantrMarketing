@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 html,
 body,
 div,
@@ -81,7 +83,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
@@ -89,8 +91,9 @@ video {
 }
 .App {
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: "Nunito", sans-serif;
   /* background-image: url("./assets/images/vegetables-752153_1920.jpg"); */
 }
 h1 {
@@ -112,4 +115,27 @@ h4 {
 .plantrFont {
   color: #1ac197;
   font-family: MarketingScript;
+}
+.plantrFont-secondary {
+  font-family: "Nunito", sans-serif;
+}
+.btn-primary {
+  background-color: #1ac197;
+  border-color: white;
+  font-family: "Nunito", sans-serif;
+}
+p {
+  font-family: "Nunito", sans-serif;
+}
+.content {
+  min-height: calc(100vh - 108px - 173px);
+}
+.high-emphasis {
+  color: rgba(255, 255, 255, 0.87);
+}
+.med-emphasis {
+  color: rgba(255, 255, 255, 0.6);
+}
+.disabled {
+  color: rgba(255, 255, 255, 0.38);
 }

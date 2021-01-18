@@ -10,9 +10,9 @@ const activeStyle = {
 export default function NavBar() {
   return (
     <header>
-      <img className="plantr" src={fullLogo} />
+      <img src={fullLogo} />
       <nav>
-        <NavLink to="/" activeStyle={activeStyle} className="nav-link">
+        <NavLink exact to="/" activeStyle={activeStyle} className="nav-link">
           Home
         </NavLink>
         <NavLink to="/nav/about" activeStyle={activeStyle} className="nav-link">

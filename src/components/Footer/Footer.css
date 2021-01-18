@@ -1,12 +1,27 @@
 footer {
   display: flex;
   justify-content: space-between;
+  background-color: #1ac197;
+  padding: 1%;
+  margin-top: 2%;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
 }
 footer .right {
   display: flex;
   flex-direction: column;
+  margin-left: 20%;
 }
 .socials {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 5%;
+}
+.link-featureless {
+  color: white;
+}
+.link-featureless:hover {
+  color: white;
+  text-decoration: none;
 }
