@@ -11,11 +11,14 @@ export default function Home() {
       {/* <img className="opaque" src={vegetables} /> */}
       <div className="opaque">
         <NavBar />
-        <h3 className="plantrFont">Let nature work for you</h3>
-        <p>
-          Here at Plantr, we believe that everyone should have access to
-          sustainable gardens that are good for your wallet and the environment.
-        </p>
+        <div className="landing-container">
+          <h1 className="plantrFont">Let nature work for you</h1>
+          <p>
+            Here at Plantr, we believe that everyone should have access to
+            sustainable gardens that are good for your wallet and the
+            environment.
+          </p>
+        </div>
       </div>
       <h2 className="plantrFont">Why Plantr?</h2>
       <div className="why">

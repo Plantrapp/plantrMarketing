@@ -11,20 +11,20 @@ header nav {
   justify-content: space-around;
 }
 header img {
-  width: 15%;
   height: 100%;
-  object-fit: cover;
+  width: 10%;
+  object-fit: contain;
+  margin-left: 10%;
 }
 .nav-link {
   text-decoration: none;
   color: #1ac197;
-  font-family: MarketingScript;
+  font-family: Nunito;
 }
 .nav-link:visited {
   text-decoration: none;
   color: #1ac197;
 }
-.plantr {
-  width: 10%;
-  object-fit: contain;
+nav {
+  margin-right: 5%;
 }

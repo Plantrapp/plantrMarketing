@@ -8,18 +8,30 @@ img {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-radius: 20px;
   font-size: 1.6rem;
 }
 .why {
   display: flex;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-around;
 }
 .why div {
   flex-basis: 20%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1%;
+}
+.home-cards {
+  width: 20%;
+}
+.landing-container {
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 30vh;
+  text-align: left;
 }
 .how {
   /* width: 80%; */
