@@ -15,31 +15,78 @@ export default function About() {
   return (
     <div>
       <h1 className="plantrFont">About Plantr</h1>
-      <h3>Meet the Team</h3>
-      <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item interval={10000}>
-          <img className="avatar" src={Sam} />
-          <Carousel.Caption>
-            <h3 className="plantrFont">Samuel Brown</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="avatar" src={Zave} />
-          <Carousel.Caption>
-            <h3 className="plantrFont">Zavier Guadalupe</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="avatar" src={Shane} />
-          <Carousel.Caption>
-            <h3 className="plantrFont">Shane Davis</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      <h3 className="plantrFont">Meet the Team</h3>
+      <div className="carousel-container">
+        <Carousel
+          activeIndex={index}
+          onSelect={handleSelect}
+          // style={{ color: "#1ac197" }}
+        >
+          <Carousel.Item>
+            <div className="cItem">
+              <img className="avatar" src={Shane} />
+              <div className="bio">
+                <h3 className="plantrFont">Shane Davis</h3>
+                <h4>Founder, CEO</h4>
+                <p>
+                  Shane Davis is a Marine Corps Veteran with a background in
+                  security working with HMX-1. During his time in the service,
+                  Shane’s travels opened his eyes to the devastating effects of
+                  food scarcity for the worlds population. He was also a witness
+                  to the effects of over production of farm land and its natural
+                  resources. Through research and connection, Shane found
+                  permaculture as a solution for problems facing modern food
+                  production.
+                </p>
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="cItem">
+              <img className="avatar" src={Sam} />
+              <div className="bio">
+                <h3 className="plantrFont">Samuel Brown</h3>
+                <h4>Web Developer</h4>
+                <p>
+                  Samuel Brown is a full-stack web developer who wants to use
+                  his skills and passion to create a better world. Sam enjoys
+                  sports, video games, music, and interesting technology.
+                </p>
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="cItem">
+              <img className="avatar" src={Zave} />
+              <div className="bio">
+                <h3 className="plantrFont">Zavier Guadalupe</h3>
+                <h4>Web Developer</h4>
+                <p>
+                  Samuel Brown is a full-stack web developer who wants to use
+                  his skills and passion to create a better world. Sam enjoys
+                  sports, video games, music, and interesting technology.
+                </p>
+              </div>
+            </div>
+          </Carousel.Item>
+        </Carousel>
+      </div>
       <div className="avatarSelect">
-        <img src={Sam} />
-        <img src={Zave} />
-        <img src={Shane} />
+        <img
+          src={Shane}
+          onClick={() => setIndex(0)}
+          className={index === 0 ? "selected" : null}
+        />
+        <img
+          src={Sam}
+          onClick={() => setIndex(1)}
+          className={index === 1 ? "selected" : null}
+        />
+        <img
+          src={Zave}
+          onClick={() => setIndex(2)}
+          className={index === 2 ? "selected" : null}
+        />
       </div>
       <h3 className="plantrFont">Our Mission</h3>
       <h4 className="plantrFont">Feed Yourself. Feed the World.</h4>
