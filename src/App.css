@@ -133,9 +133,17 @@ p {
 .high-emphasis {
   color: rgba(255, 255, 255, 0.87);
 }
-.med-emphasis {
+.mid-emphasis {
   color: rgba(255, 255, 255, 0.6);
 }
 .disabled {
   color: rgba(255, 255, 255, 0.38);
+}
+hr {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 4%;
+}
+.bold {
+  font-weight: bold;
 }
