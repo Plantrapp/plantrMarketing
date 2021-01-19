@@ -23,11 +23,8 @@ export default function Home() {
       <section className="why">
         <div>
           <h3 className="plantrFont">Easy</h3>
-          <FaCheckDouble size={50} />
-          {/* <p>
-            Download the Plantr App *insert links to app store and google store*
-          </p>
-          <p>Make an account and select your role *insert screenshots*</p> */}
+          <FaCheckDouble size={50} className="icon" />
+
           <p>
             Connect with others around you to find how you can become a
             permaculture expert, all from the comfort of your own home. *insert
@@ -36,11 +33,11 @@ export default function Home() {
         </div>
         <div>
           <h3 className="plantrFont">Sustainable</h3>
-          <FaSeedling size={50} />
+          <FaSeedling size={50} className="icon" />
         </div>
         <div>
           <h3 className="plantrFont">Cost Effective</h3>
-          <FaCoins size={50} />
+          <FaCoins size={50} className="icon" />
           <p>
             No more wasting water on dying grass. Instead, use your water to
             grow the garden of your dreams! It takes less water and you can grow

@@ -30,8 +30,12 @@ export default function Footer() {
         </Row>
 
         <Row>
-          <Col></Col>
-          <Col></Col>
+          <Col>Meet the Team</Col>
+          <Col>
+            <a href="mailto:plantrappofficial@gmail.com">
+              plantrappofficial@gmail.com
+            </a>
+          </Col>
           <Col>
             <NavLink to="/nav/support" className="link-featureless">
               Donate
@@ -40,8 +44,10 @@ export default function Footer() {
         </Row>
 
         <Row>
-          <Col></Col>
-          <Col></Col>
+          <Col>GUILDS</Col>
+          <Col>
+            <a href="tel:5418108414">541-810-8414</a>
+          </Col>
           <Col>
             <NavLink to="/nav/support" className="link-featureless">
               Shop

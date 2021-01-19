@@ -13,10 +13,6 @@
   width: 10%;
   border-radius: 100%;
 }
-
-/* .selected {
-  border: 2px solid white;
-} */
 .cItem {
   width: 80%;
   display: flex;
@@ -30,7 +26,6 @@
 .carousel-container {
   width: 80%;
   margin: 2% auto;
-  /* background-color: rgba(255, 255, 255, 0.05); */
 }
 .bio {
   display: flex;
@@ -49,4 +44,11 @@
 .carousel-control-next-icon {
   color: #1ac197;
   /* background-color: #1ac197; */
+}
+.mission {
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgb(34, 104, 64);
+  border-radius: 10px;
+  padding-bottom: 2%;
 }
