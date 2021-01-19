@@ -43,11 +43,7 @@ export default function About() {
       <hr />
       <h3 className="plantrFont">Meet the Team</h3>
       <div className="carousel-container">
-        <Carousel
-          activeIndex={0}
-          onSelect={handleSelect}
-          // style={{ color: "#1ac197" }}
-        >
+        <Carousel activeIndex={index} onSelect={handleSelect}>
           <Carousel.Item>
             <div className="cItem">
               <img className="avatar" src={Shane} />
