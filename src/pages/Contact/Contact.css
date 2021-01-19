@@ -1,0 +1,45 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 60%;
+  border-radius: 10px;
+  padding: 1%;
+}
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: left;
+}
+.inputting {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid rgb(126, 126, 126);
+  outline: none;
+  padding: 0% 2%;
+  width: 90%;
+  color: rgba(255, 255, 255, 0.38);
+  margin: 2% 0;
+}
+.inputting:focus {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid rgb(126, 126, 126);
+  border-radius: 0;
+  outline-style: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.87);
+}
+.contact-sections {
+  margin: 2%;
+}
+.contact-sections a {
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+}
+.contact-socials {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
