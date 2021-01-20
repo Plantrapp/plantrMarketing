@@ -86,7 +86,7 @@ video {
   font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
-  border: 1px solid grey;
+
   box-sizing: border-box;
 }
 .App {
@@ -157,4 +157,10 @@ hr {
 }
 .center {
   justify-content: center;
+}
+.text-left {
+  text-align: left;
+}
+.nav-bar-padding {
+  padding-top: 10vh;
 }

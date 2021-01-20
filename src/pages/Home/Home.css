@@ -10,6 +10,7 @@ img {
   flex-direction: column;
   border-radius: 20px;
   font-size: 1.6rem;
+  background-size: cover;
 }
 .why {
   display: flex;

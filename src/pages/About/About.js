@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NavBar from "../../components/NavBar/NavBar";
 import Carousel from "react-bootstrap/Carousel";
 import Sam from "../../assets/images/samPic.png";
 import Zave from "../../assets/images/zavePic.jpg";
@@ -13,12 +14,11 @@ export default function About() {
   };
 
   return (
-    <div>
-      <h1 className="plantrFont">About Plantr</h1>
+    <div className="nav-bar-padding">
       <section className="mission">
         <h3 className="plantrFont">Our Mission</h3>
-        <h4 className="plantrFont">Feed Yourself. Feed the World.</h4>
-        <p>
+        <h4 className="plantrFont text-left">Feed Yourself. Feed the World.</h4>
+        <p className="text-left">
           At Plantr, we believe wholesome and organic food is a basic human
           right. Everyone should have access to it. That's why we're teaming up
           permaculture experts with homeowners who would like to use their
@@ -27,15 +27,17 @@ export default function About() {
           subscription. What's better is that any excess food can be donated to
           local food banks.
         </p>
-        <h3 className="plantrFont">
+        <hr />
+        <h3 className="plantrFont text-left">
           Designers, Gardeners, Builders and Landscaping Professionals
-        </h3>{" "}
-        <p>
+        </h3>
+        <p className="text-left ">
           Reach new customers. Share your talents and skills. Show examples of
           your work. Get more projects. Network with other Permaculture Experts.
         </p>
-        <h3 className="plantrFont">Homeowners and Hobby Gardeners</h3>
-        <p>
+        <hr />
+        <h3 className="plantrFont text-left">Homeowners and Hobby Gardeners</h3>
+        <p className="text-left">
           Get to know the experts in your area and streamline your shopping
           experience. Save time. Grow your very own organic food.
         </p>

@@ -4,6 +4,10 @@ header {
   align-items: center;
   height: 10vh;
   font-size: 1.4rem;
+  background-color: #ffffff00;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
 }
 header nav {
   width: 40%;
