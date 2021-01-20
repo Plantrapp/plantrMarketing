@@ -18,9 +18,9 @@ export default function NavBar() {
         <NavLink exact to="/" activeStyle={activeStyle} className="nav-link">
           Home
         </NavLink>
-        <NavLink to="/features" activeStyle={activeStyle} className="nav-link">
+        {/* <NavLink to="/features" activeStyle={activeStyle} className="nav-link">
           Features
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/about" activeStyle={activeStyle} className="nav-link">
           About
         </NavLink>

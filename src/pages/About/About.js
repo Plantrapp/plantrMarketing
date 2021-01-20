@@ -16,34 +16,45 @@ export default function About() {
   return (
     <div className="nav-bar-padding">
       <section className="mission">
-        <h3 className="plantrFont">Our Mission</h3>
-        <h4 className="plantrFont text-left">Feed Yourself. Feed the World.</h4>
-        <p className="text-left">
-          At Plantr, we believe wholesome and organic food is a basic human
-          right. Everyone should have access to it. That's why we're teaming up
-          permaculture experts with homeowners who would like to use their
-          services. Clients can use the platform to find a local expert to
-          design and maintain an organic food growing garden,for a monthly
-          subscription. What's better is that any excess food can be donated to
-          local food banks.
-        </p>
+        <h2 className="plantrFont">Our Mission</h2>
+        <div className="mission-cards">
+          <h4 className="plantrFont text-left">
+            Feed Yourself. Feed the World.
+          </h4>
+          <p className="text-left">
+            At Plantr, we believe wholesome and organic food is a basic human
+            right. Everyone should have access to it. That's why we're teaming
+            up permaculture experts with homeowners who would like to use their
+            services. Clients can use the platform to find a local expert to
+            design and maintain an organic food growing garden,for a monthly
+            subscription. What's better is that any excess food can be donated
+            to local food banks.
+          </p>
+        </div>
         <hr />
-        <h3 className="plantrFont text-left">
-          Designers, Gardeners, Builders and Landscaping Professionals
-        </h3>
-        <p className="text-left ">
-          Reach new customers. Share your talents and skills. Show examples of
-          your work. Get more projects. Network with other Permaculture Experts.
-        </p>
+        <div className="mission-cards">
+          <h3 className="plantrFont text-left">
+            Designers, Gardeners, Builders and Landscaping Professionals
+          </h3>
+          <p className="text-left ">
+            Reach new customers. Share your talents and skills. Show examples of
+            your work. Get more projects. Network with other Permaculture
+            Experts.
+          </p>
+        </div>
         <hr />
-        <h3 className="plantrFont text-left">Homeowners and Hobby Gardeners</h3>
-        <p className="text-left">
-          Get to know the experts in your area and streamline your shopping
-          experience. Save time. Grow your very own organic food.
-        </p>
+        <div className="mission-cards">
+          <h3 className="plantrFont text-left">
+            Homeowners and Hobby Gardeners
+          </h3>
+          <p className="text-left">
+            Get to know the experts in your area and streamline your shopping
+            experience. Save time. Grow your very own organic food.
+          </p>
+        </div>
       </section>
       <hr />
-      <h3 className="plantrFont">Meet the Team</h3>
+      <h2 className="plantrFont">Meet the Team</h2>
       <div className="carousel-container">
         <Carousel activeIndex={index} onSelect={handleSelect}>
           <Carousel.Item>
