@@ -1,13 +1,28 @@
 .cContainer {
-  width: 70%;
-  margin: 0 auto;
+  width: 60%;
+  margin: 1% auto;
 }
 .shopIcons {
   display: flex;
   width: 70%;
-  margin: 0 auto;
+  margin: 2% auto;
   justify-content: space-evenly;
 }
 .shopIcons img {
   width: 15%;
+  border-radius: 10px;
+}
+.cContainer .cItem {
+  align-items: center;
+}
+.support-icon {
+  background-color: rgba(255, 255, 255, 0);
+  color: whitesmoke;
+  border: none;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+.support-icon:hover {
+  border: 1px solid rgba(255, 255, 255, 0.87);
 }

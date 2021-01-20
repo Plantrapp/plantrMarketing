@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPatreon } from "react-icons/fa";
+import { FaPatreon, FaShoppingCart } from "react-icons/fa";
 import Carousel from "react-bootstrap/Carousel";
 import { Button } from "react-bootstrap";
 import tShirt from "../../assets/images/560-2.jpg";
@@ -20,13 +20,22 @@ export default function Support() {
         <a href="https://teespring.com/stores/plantr?page=1" target="_blank">
           <Carousel onSelect={handleSelect} activeIndex={index} href="">
             <Carousel.Item>
-              <img src={sweats} />
+              <div className="cItem">
+                <img src={sweats} />
+                <h3 className="plantrFont">Plantr Sustainable Sweats</h3>
+              </div>
             </Carousel.Item>
             <Carousel.Item>
-              <img src={hoodie} />
+              <div className="cItem">
+                <img src={hoodie} />
+                <h3 className="plantrFont"> Plantr Feed Yourself Hoodie</h3>
+              </div>
             </Carousel.Item>
             <Carousel.Item>
-              <img src={tShirt} />
+              <div className="cItem">
+                <img src={tShirt} />
+                <h3 className="plantrFont">Plantr Sustainable Tee</h3>
+              </div>
             </Carousel.Item>
           </Carousel>
         </a>
@@ -52,24 +61,32 @@ export default function Support() {
         Support Plantr and pick up some sweet gear at the same time! Visit our
         shop
       </p>
-      <a></a>
-      <Button href="https://teespring.com/stores/plantr?page=1" target="_blank">
-        Shop
-      </Button>
-      <h3 className="plantrFont">Donate</h3>
-      <p>
-        Help us grow quicker by donating a few bucks a month. We appreciate all
-        the help we can get!
-      </p>
-      <button>
+      <button className="support-icon">
         <a
-          href="https://www.patreon.com/bePatron?u=40829391&redirect_uri=https%3A%2F%2Favocado-turbot-ed5y.squarespace.com%2Fgrow&utm_medium=widget"
+          href="https://teespring.com/stores/plantr?page=1"
           className="nav-link"
         >
-          <FaPatreon size={75} />
+          <FaShoppingCart size={75} />
         </a>
-        <p>Become a patron</p>
+        <p>Visit our shop</p>
       </button>
+      <hr />
+      <div className="mission-cards">
+        <h3 className="plantrFont">Donate</h3>
+        <p>
+          Help us grow quicker by donating a few bucks a month. We appreciate
+          all the help we can get!
+        </p>
+        <button className="support-icon">
+          <a
+            href="https://www.patreon.com/bePatron?u=40829391&redirect_uri=https%3A%2F%2Favocado-turbot-ed5y.squarespace.com%2Fgrow&utm_medium=widget"
+            className="nav-link"
+          >
+            <FaPatreon size={75} />
+          </a>
+          <p>Become a patron</p>
+        </button>
+      </div>
     </div>
   );
 }
