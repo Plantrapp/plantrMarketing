@@ -15,6 +15,13 @@ export default function NavBar() {
         <NavLink exact to="/" activeStyle={activeStyle} className="nav-link">
           Home
         </NavLink>
+        <NavLink
+          to="/nav/features"
+          activeStyle={activeStyle}
+          className="nav-link"
+        >
+          Features
+        </NavLink>
         <NavLink to="/nav/about" activeStyle={activeStyle} className="nav-link">
           About
         </NavLink>
