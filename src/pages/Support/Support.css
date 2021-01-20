@@ -1,10 +1,10 @@
 .cContainer {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .shopIcons {
   display: flex;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   justify-content: space-evenly;
 }

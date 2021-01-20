@@ -18,17 +18,19 @@ export default function Support() {
       <h1 className="plantrFont">Support Us</h1>
       <h3 className="plantrFont">Shop</h3>
       <div className="cContainer">
-        <Carousel onSelect={handleSelect} activeIndex={index}>
-          <Carousel.Item>
-            <img src={sweats} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src={hoodie} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src={tShirt} />
-          </Carousel.Item>
-        </Carousel>
+        <a href="https://teespring.com/stores/plantr?page=1" target="_blank">
+          <Carousel onSelect={handleSelect} activeIndex={index} href="">
+            <Carousel.Item>
+              <img src={sweats} />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={hoodie} />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={tShirt} />
+            </Carousel.Item>
+          </Carousel>
+        </a>
       </div>
       <div className="shopIcons">
         <img
@@ -52,7 +54,9 @@ export default function Support() {
         shop
       </p>
       <a></a>
-      <Button href="https://teespring.com/stores/plantr?page=1">Shop</Button>
+      <Button href="https://teespring.com/stores/plantr?page=1" target="_blank">
+        Shop
+      </Button>
       <h3 className="plantrFont">Donate</h3>
       <p>
         Help us grow quicker by donating a few bucks a month. We appreciate all

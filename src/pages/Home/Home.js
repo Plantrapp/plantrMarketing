@@ -79,7 +79,7 @@ export default function Home() {
         <div className="outer">
           <img src={vineyard} />
           <div className="inner right">
-            <h3 className="plantrFont">GUILDS</h3>
+            <h3 className="plantrFont">Guilds</h3>
             <p>
               For Plantrs who have big projects that are too much for one person
               to handle, form a GUILD with other Plantrs to work towards a
