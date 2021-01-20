@@ -14,8 +14,7 @@ export default function Support() {
     setIndex(selectedIndex);
   };
   return (
-    <div className="content">
-      <h1 className="plantrFont">Support Us</h1>
+    <div className="content nav-bar-padding ">
       <h3 className="plantrFont">Shop</h3>
       <div className="cContainer">
         <a href="https://teespring.com/stores/plantr?page=1" target="_blank">

@@ -5,6 +5,9 @@ import "./NavBar.css";
 
 const activeStyle = {
   color: "white",
+  borderBottom: "1px solid white",
+  transitionProperty: "border-bottom",
+  transition: "0.3s ease-in-out",
 };
 
 export default function NavBar() {
@@ -15,28 +18,16 @@ export default function NavBar() {
         <NavLink exact to="/" activeStyle={activeStyle} className="nav-link">
           Home
         </NavLink>
-        <NavLink
-          to="/nav/features"
-          activeStyle={activeStyle}
-          className="nav-link"
-        >
+        <NavLink to="/features" activeStyle={activeStyle} className="nav-link">
           Features
         </NavLink>
-        <NavLink to="/nav/about" activeStyle={activeStyle} className="nav-link">
+        <NavLink to="/about" activeStyle={activeStyle} className="nav-link">
           About
         </NavLink>
-        <NavLink
-          to="/nav/contact"
-          activeStyle={activeStyle}
-          className="nav-link"
-        >
+        <NavLink to="/contact" activeStyle={activeStyle} className="nav-link">
           Contact
         </NavLink>
-        <NavLink
-          to="/nav/support"
-          activeStyle={activeStyle}
-          className="nav-link"
-        >
+        <NavLink to="/support" activeStyle={activeStyle} className="nav-link">
           Support Us
         </NavLink>
       </nav>
