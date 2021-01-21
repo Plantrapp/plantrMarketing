@@ -1,16 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 import "./Contact.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
+import { gsap } from "gsap";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const main = useRef();
+  useEffect(() => {
+    gsap.from(main.current, {
+      opacity: 0,
+      duration: 1.5,
+    });
+  });
+
   return (
     <div style={{ height: "84vh" }}>
-      <div className="content content-container center nav-bar-padding">
+      <div
+        className="content content-container center nav-bar-padding"
+        ref={main}
+      >
         <div className="contact-container">
           <h1 className="plantrFont">Contact Us</h1>
 

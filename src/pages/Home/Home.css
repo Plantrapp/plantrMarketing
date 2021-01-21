@@ -84,3 +84,11 @@ section {
 .icon {
   margin: 1% 0 2% 0;
 }
+@media (max-width: 375px) {
+  .landing-container {
+    width: 80%;
+  }
+  .why {
+    flex-direction: column;
+  }
+}
