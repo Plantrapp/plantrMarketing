@@ -39,7 +39,8 @@
 }
 .selected {
   border: 3px solid #1ac197;
-  box-shadow: 0px 0px 10px #1ac19788;
+  box-shadow: 0px 0px 15px #1ac19788;
+  transition: box-shadow 2s ease-in-out;
 }
 .carousel-control-next-icon {
   color: #1ac197;

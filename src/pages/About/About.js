@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import { gsap } from "gsap";
 import NavBar from "../../components/NavBar/NavBar";
 import Carousel from "react-bootstrap/Carousel";
 import Sam from "../../assets/images/samPic.png";
@@ -8,16 +9,32 @@ import "./About.css";
 
 export default function About() {
   const [index, setIndex] = useState(0);
+  const missionCards1 = useRef();
+  const missionCards2 = useRef();
+  const missionCards3 = useRef();
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-
+  useEffect(() => {
+    gsap.from(missionCards1.current, {
+      opacity: 0,
+      duration: 1.5,
+    });
+    gsap.from(missionCards2.current, {
+      opacity: 0,
+      duration: 1.5,
+    });
+    gsap.from(missionCards3.current, {
+      opacity: 0,
+      duration: 1.5,
+    });
+  }, []);
   return (
     <div className="nav-bar-padding">
       <section className="mission">
         <h2 className="plantrFont">Our Mission</h2>
-        <div className="mission-cards">
+        <div className="mission-cards" ref={missionCards1}>
           <h4 className="plantrFont text-left">
             Feed Yourself. Feed the World.
           </h4>
@@ -32,7 +49,7 @@ export default function About() {
           </p>
         </div>
         <hr />
-        <div className="mission-cards">
+        <div className="mission-cards" ref={missionCards2}>
           <h3 className="plantrFont text-left">
             Designers, Gardeners, Builders and Landscaping Professionals
           </h3>
@@ -43,7 +60,7 @@ export default function About() {
           </p>
         </div>
         <hr />
-        <div className="mission-cards">
+        <div className="mission-cards" ref={missionCards3}>
           <h3 className="plantrFont text-left">
             Homeowners and Hobby Gardeners
           </h3>

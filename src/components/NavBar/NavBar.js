@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import fullLogo from "../../assets/images/Asset2.svg";
+
 import "./NavBar.css";
 
 const activeStyle = {
