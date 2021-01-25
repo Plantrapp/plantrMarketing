@@ -18,7 +18,7 @@ export default function Contact() {
   });
 
   return (
-    <div style={{ height: "84vh" }}>
+    <div className="page-container">
       <div
         className="content content-container center nav-bar-padding"
         ref={main}
@@ -26,7 +26,7 @@ export default function Contact() {
         <div className="contact-container">
           <h1 className="plantrFont">Contact Us</h1>
 
-          <div className="content-container flex-row">
+          <div className="content-container">
             <div className="contact-left">
               <div className="contact-sections">
                 <h4 className="plantrFont">Email</h4>

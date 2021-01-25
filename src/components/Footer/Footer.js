@@ -30,13 +30,13 @@ export default function Footer() {
         </Row>
 
         <Row>
-          <Col>Meet the Team</Col>
+          <Col>The Team</Col>
           <Col>
             <a
               href="mailto:plantrappofficial@gmail.com"
               className="link-featureless"
             >
-              plantrappofficial@gmail.com
+              Email
             </a>
           </Col>
           <Col>
@@ -50,7 +50,7 @@ export default function Footer() {
           <Col>GUILDS</Col>
           <Col>
             <a href="tel:5418108414" className="link-featureless">
-              541-810-8414{" "}
+              Call
             </a>
           </Col>
           <Col>
