@@ -69,7 +69,7 @@ export default function Home() {
         start: "top center",
       },
       duration: 1.75,
-      x: -400,
+      y: 200,
       opacity: 0,
       ease: "back",
     });
@@ -79,17 +79,17 @@ export default function Home() {
         start: "top center",
       },
       duration: 1.75,
-      x: 400,
+      y: 200,
       opacity: 0,
       ease: "back",
     });
     gsap.from(guild_card.current, {
       scrollTrigger: {
         trigger: ".guild_card",
-        start: "top center",
+        start: "top 700px",
       },
       duration: 1.75,
-      x: -400,
+      y: 200,
       opacity: 0,
       ease: "back",
     });
@@ -167,6 +167,7 @@ export default function Home() {
           </div>
           <img src={vineyard} />
         </div>
+
         <div className="outer guild_card" ref={guild_card}>
           <img src={vineyard} />
           <div className="inner right">

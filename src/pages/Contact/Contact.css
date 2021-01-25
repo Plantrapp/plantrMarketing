@@ -1,3 +1,12 @@
+* {
+  /* border: 1px solid green; */
+}
+.page-container {
+  height: 84vh;
+}
+.content-container {
+  flex-direction: row;
+}
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -46,4 +55,20 @@
 }
 .spacer {
   padding-top: 20vh;
+}
+@media (max-width: 768px) {
+  .page-container {
+    height: 101vh;
+  }
+  .contact-container {
+    margin-top: 18%;
+    width: 80%;
+    padding: 4% 0;
+  }
+  .content-container {
+    flex-direction: column-reverse;
+  }
+  .contact-left {
+    width: 90%;
+  }
 }
