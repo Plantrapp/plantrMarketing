@@ -32,6 +32,8 @@ export default function About() {
   }, []);
   return (
     <div className="nav-bar-padding">
+      <h1 className="plantrFont">About</h1>
+      <hr />
       <section className="mission">
         <h2 className="plantrFont">Our Mission</h2>
         <div className="mission-cards" ref={missionCards1}>

@@ -15,63 +15,67 @@ export default function Support() {
   };
   return (
     <div className="content nav-bar-padding ">
-      <h3 className="plantrFont">Shop</h3>
-      <div className="cContainer">
-        <a href="https://teespring.com/stores/plantr?page=1" target="_blank">
-          <Carousel onSelect={handleSelect} activeIndex={index} href="">
-            <Carousel.Item>
-              <div className="cItem">
-                <img src={sweats} />
-                <h3 className="plantrFont">Plantr Sustainable Sweats</h3>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="cItem">
-                <img src={hoodie} />
-                <h3 className="plantrFont"> Plantr Feed Yourself Hoodie</h3>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="cItem">
-                <img src={tShirt} />
-                <h3 className="plantrFont">Plantr Sustainable Tee</h3>
-              </div>
-            </Carousel.Item>
-          </Carousel>
-        </a>
-      </div>
-      <div className="shopIcons">
-        <img
-          src={sweats}
-          onClick={() => setIndex(0)}
-          className={index === 0 ? "selected" : null}
-        />
-        <img
-          src={hoodie}
-          onClick={() => setIndex(1)}
-          className={index === 1 ? "selected" : null}
-        />
-        <img
-          src={tShirt}
-          onClick={() => setIndex(2)}
-          className={index === 2 ? "selected" : null}
-        />
-      </div>
-      <p>
-        Support Plantr and pick up some sweet gear at the same time! Visit our
-        shop
-      </p>
-      <button className="support-icon">
-        <a
-          href="https://teespring.com/stores/plantr?page=1"
-          className="nav-link"
-        >
-          <FaShoppingCart size={75} />
-        </a>
-        <p>Visit our shop</p>
-      </button>
+      <h1 className="plantrFont">Support Plantr</h1>
       <hr />
-      <div className="mission-cards">
+      <section className="support-section">
+        <h3 className="plantrFont">Shop</h3>
+        <div className="cContainer">
+          <a href="https://teespring.com/stores/plantr?page=1" target="_blank">
+            <Carousel onSelect={handleSelect} activeIndex={index} href="">
+              <Carousel.Item>
+                <div className="cItem">
+                  <img src={sweats} />
+                  <h3 className="plantrFont">Plantr Sustainable Sweats</h3>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="cItem">
+                  <img src={hoodie} />
+                  <h3 className="plantrFont"> Plantr Feed Yourself Hoodie</h3>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="cItem">
+                  <img src={tShirt} />
+                  <h3 className="plantrFont">Plantr Sustainable Tee</h3>
+                </div>
+              </Carousel.Item>
+            </Carousel>
+          </a>
+        </div>
+        <div className="shopIcons">
+          <img
+            src={sweats}
+            onClick={() => setIndex(0)}
+            className={index === 0 ? "selected" : null}
+          />
+          <img
+            src={hoodie}
+            onClick={() => setIndex(1)}
+            className={index === 1 ? "selected" : null}
+          />
+          <img
+            src={tShirt}
+            onClick={() => setIndex(2)}
+            className={index === 2 ? "selected" : null}
+          />
+        </div>
+        <p>
+          Support Plantr and pick up some sweet gear at the same time! Visit our
+          shop
+        </p>
+        <button className="support-icon">
+          <a
+            href="https://teespring.com/stores/plantr?page=1"
+            className="nav-link"
+          >
+            <FaShoppingCart size={75} />
+          </a>
+          <p>Visit our shop</p>
+        </button>
+      </section>
+      <hr />
+      <section className="support-section">
         <h3 className="plantrFont">Donate</h3>
         <p>
           Help us grow quicker by donating a few bucks a month. We appreciate
@@ -86,7 +90,7 @@ export default function Support() {
           </a>
           <p>Become a patron</p>
         </button>
-      </div>
+      </section>
     </div>
   );
 }
