@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 // import vegetables from "../../assets/images/vegetables-752153_1920.jpg";
 import "./Home.css";
-import NavBar from "../../components/NavBar/NavBar";
 import { FaSeedling, FaCoins, FaCheckDouble } from "react-icons/fa";
 import vineyard from "../../assets/images/vineyard-428041_1920.jpg";
 import { Button, Col, Container, Row } from "react-bootstrap";

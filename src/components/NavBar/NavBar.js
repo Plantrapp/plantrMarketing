@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import fullLogo from "../../assets/images/Asset2.svg";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import Dropdown from "react-bootstrap/Dropdown";
 import "./NavBar.css";
 
 const activeStyle = {
