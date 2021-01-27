@@ -1,0 +1,30 @@
+.features {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.features section {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 2%;
+  flex-basis: 50%;
+  margin: 0 1%;
+  font-size: 1.6rem;
+}
+.lists {
+  text-align: left;
+  list-style: none;
+  font-size: 1.2rem;
+  margin: 3% 2%;
+  /* list-style-image: url("../../assets/images/logo1.svg"); */
+  line-height: 2;
+}
+
+.lists li::before {
+  content: url("../../assets/images/logo1.svg");
+  color: #1ac197;
+  display: inline-block;
+  width: 1rem;
+  margin-right: 1rem;
+}
