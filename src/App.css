@@ -83,9 +83,9 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
+  font-size: calc(10px + (10-10) * (100vw - 400px) / (1600 - 400));
 
   box-sizing: border-box;
 }
