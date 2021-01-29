@@ -69,7 +69,7 @@ export default function Support() {
             href="https://teespring.com/stores/plantr?page=1"
             className="nav-link"
           >
-            <FaShoppingCart size={75} />
+            <FaShoppingCart size={"8%"} />
           </a>
           <p>Visit our shop</p>
         </button>
@@ -86,7 +86,7 @@ export default function Support() {
             href="https://www.patreon.com/bePatron?u=40829391&redirect_uri=https%3A%2F%2Favocado-turbot-ed5y.squarespace.com%2Fgrow&utm_medium=widget"
             className="nav-link"
           >
-            <FaPatreon size={75} />
+            <FaPatreon size={"8%"} />
           </a>
           <p>Become a patron</p>
         </button>

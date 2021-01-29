@@ -62,36 +62,69 @@ export default function Home() {
         0.5
       );
     //Bottom section
-    gsap.from(how_card.current, {
-      scrollTrigger: {
-        trigger: ".how_card",
-        start: "top center",
-      },
-      duration: 1.75,
-      y: 200,
-      opacity: 0,
-      ease: "back",
-    });
-    gsap.from(connect_card.current, {
-      scrollTrigger: {
-        trigger: ".connect_card",
-        start: "top center",
-      },
-      duration: 1.75,
-      y: 200,
-      opacity: 0,
-      ease: "back",
-    });
-    gsap.from(guild_card.current, {
-      scrollTrigger: {
-        trigger: ".guild_card",
-        start: "top 700px",
-      },
-      duration: 1.75,
-      y: 200,
-      opacity: 0,
-      ease: "back",
-    });
+    if (window.innerWidth > 768) {
+      gsap.from(how_card.current, {
+        scrollTrigger: {
+          trigger: ".how_card",
+          start: "top 60%",
+        },
+        duration: 1.75,
+        x: -400,
+        opacity: 0,
+        ease: "back",
+      });
+      gsap.from(connect_card.current, {
+        scrollTrigger: {
+          trigger: ".connect_card",
+          start: "top 60%",
+        },
+        duration: 1.75,
+        x: 400,
+        opacity: 0,
+        ease: "back",
+      });
+      gsap.from(guild_card.current, {
+        scrollTrigger: {
+          trigger: ".guild_card",
+          start: "top 60%",
+        },
+        duration: 1.75,
+        x: -400,
+        opacity: 0,
+        ease: "back",
+      });
+    } else {
+      gsap.from(how_card.current, {
+        scrollTrigger: {
+          trigger: ".how_card",
+          start: "top 60%",
+        },
+        duration: 1.75,
+        y: 200,
+        opacity: 0,
+        ease: "back",
+      });
+      gsap.from(connect_card.current, {
+        scrollTrigger: {
+          trigger: ".connect_card",
+          start: "top 60%",
+        },
+        duration: 1.75,
+        y: 200,
+        opacity: 0,
+        ease: "back",
+      });
+      gsap.from(guild_card.current, {
+        scrollTrigger: {
+          trigger: ".guild_card",
+          start: "top 60%",
+        },
+        duration: 1.75,
+        y: 200,
+        opacity: 0,
+        ease: "back",
+      });
+    }
   }, [how_card, connect_card, guild_card, why1, why2, why3]);
 
   return (
