@@ -112,27 +112,29 @@ export default function Home() {
           <h3 className="plantrFont">Easy</h3>
           <FaCheckDouble size={50} className="icon" />
           <p className="text-left">
-            Connect with others around you to find how you can become a
-            permaculture expert, all from the comfort of your own home. *insert
-            map*
+            With the click of a button connect to professionals to replace your
+            drab with delight, with just a few questions and answers we get you
+            growing what you want and what will help you the most.
           </p>
         </div>
         <div className="why_card2" ref={why2}>
           <h3 className="plantrFont">Sustainable</h3>
           <FaSeedling size={50} className="icon" />
           <p className="text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Our methods are not only sustainable, they’re restorative as well.
+            They improve soil health, restore native species and improve the
+            lives of everything that lives near them. No Chemicals, Non-GMO 100%
+            local.
           </p>
         </div>
         <div className="why_card3" ref={why3}>
           <h3 className="plantrFont">Cost Effective</h3>
           <FaCoins size={50} className="icon" />
           <p className="text-left">
-            No more wasting water on dying grass. Instead, use your water to
-            grow the garden of your dreams! It takes less water and you can grow
-            your very own fruits and vegetables, which means savings on your
-            water and grocery bills!
+            Save money on water, lawn care, and food costs all in one click. Our
+            systems require less water than grass lawns, replace the cost of
+            caring for your grass lawn and supplement food costs by growing at
+            least 50% of your diet in as little as 1/8 of an acre.
           </p>
         </div>
       </section>
