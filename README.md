@@ -28,3 +28,17 @@ The site is currently live at [https://plantrapp.now.sh/]
 - Support
   - Carousel displaying some of the items available for purchase with a link to the Teespring site
   - A button linking to Plantr's Patreon so that people can donate.
+
+## Future Features
+
+- Features Page
+  - Guilds
+    - Talks about what Guilds are and how to get involved
+  - Map
+  - Messaging
+- Contact
+  - Backend handling contact form
+- Site Map
+  - Add more to site map and edit links
+- Responsive
+  - Edit the carousels and other components to implement mobile design
