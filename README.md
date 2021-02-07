@@ -28,3 +28,23 @@ The site is currently live at [https://plantrapp.now.sh/]
 - Support
   - Carousel displaying some of the items available for purchase with a link to the Teespring site
   - A button linking to Plantr's Patreon so that people can donate.
+
+## Future Features
+
+- Features Page
+  - Guilds
+    - Talks about what Guilds are and how to get involved
+  - Map
+  - Messaging
+- Contact
+  - Backend handling contact form
+- Site Map
+  - Add more to site map and edit links
+- Responsive
+  - Edit the carousels and other components to implement mobile design
+
+## Dev Team
+
+- [Samuel Brown](https://github.com/sambrown0322)[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/sambrown0322) [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/samuelbrown0322/) - Full-stack Developer
+
+- [Zavier Guadalupe](https://github.com/ZaveDev)[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/ZaveDev) [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/zavier-guadalupe/) - Full-stack Developer
