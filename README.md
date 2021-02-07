@@ -42,3 +42,9 @@ The site is currently live at [https://plantrapp.now.sh/]
   - Add more to site map and edit links
 - Responsive
   - Edit the carousels and other components to implement mobile design
+
+## Dev Team
+
+- [Samuel Brown](https://github.com/sambrown0322)[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/sambrown0322) [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/samuelbrown0322/) - Full-stack Developer
+
+- [Zavier Guadalupe](https://github.com/ZaveDev)[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/ZaveDev) [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/zavier-guadalupe/) - Full-stack Developer
