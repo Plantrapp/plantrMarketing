@@ -1,6 +1,3 @@
-* {
-  /* border: 1px solid green; */
-}
 header {
   display: flex;
   justify-content: space-between;
@@ -30,6 +27,9 @@ header img {
 }
 .nav-link:visited {
   text-decoration: none;
+  color: #1ac197;
+}
+.nav-link:hover {
   color: #1ac197;
 }
 nav {
