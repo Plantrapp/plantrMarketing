@@ -24,26 +24,26 @@ export default function Support() {
             <Carousel onSelect={handleSelect} activeIndex={index} href="">
               <Carousel.Item>
                 <div className="cItem">
-                  <img src={sweats} />
+                  <img src={sweats} className="avatar" />
                   <h3 className="plantrFont">Plantr Sustainable Sweats</h3>
                 </div>
               </Carousel.Item>
               <Carousel.Item>
                 <div className="cItem">
-                  <img src={hoodie} />
+                  <img src={hoodie} className="avatar" />
                   <h3 className="plantrFont"> Plantr Feed Yourself Hoodie</h3>
                 </div>
               </Carousel.Item>
               <Carousel.Item>
                 <div className="cItem">
-                  <img src={tShirt} />
+                  <img src={tShirt} className="avatar" />
                   <h3 className="plantrFont">Plantr Sustainable Tee</h3>
                 </div>
               </Carousel.Item>
             </Carousel>
           </a>
         </div>
-        <div className="shopIcons">
+        <div className="avatarSelect">
           <img
             src={sweats}
             onClick={() => setIndex(0)}
@@ -60,10 +60,7 @@ export default function Support() {
             className={index === 2 ? "selected" : null}
           />
         </div>
-        <p>
-          Support Plantr and pick up some sweet gear at the same time! Visit our
-          shop
-        </p>
+        <p>Support Plantr and pick up some sweet gear at the same time!</p>
         <button className="support-icon">
           <a
             href="https://teespring.com/stores/plantr?page=1"

@@ -28,3 +28,12 @@
   width: 1rem;
   margin-right: 1rem;
 }
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    width: 90%;
+  }
+  .features section {
+    margin: 2% 0;
+  }
+}
