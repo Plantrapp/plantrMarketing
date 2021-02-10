@@ -85,27 +85,27 @@ video {
   padding: 0;
   font: inherit;
   vertical-align: baseline;
-  font-size: clamp(0.6em, 1.5vw, 1em);
 
   box-sizing: border-box;
 }
 .App {
+  font-size: clamp(1em, 2vw, 1.1em);
   text-align: center;
   background-color: #121212;
   color: rgba(255, 255, 255, 0.87);
   font-family: "Nunito", sans-serif;
 }
 h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2.6rem, 5vw, 3rem);
 }
 h2 {
-  font-size: 2.6rem;
+  font-size: clamp(2.2rem, 5vw, 2.6rem);
 }
 h3 {
-  font-size: 2.2rem;
+  font-size: clamp(2rem, 3.5vw, 2.2rem);
 }
 h4 {
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 3.5vw, 2rem);
 }
 @font-face {
   font-family: MarketingScript;

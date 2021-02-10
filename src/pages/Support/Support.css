@@ -1,5 +1,6 @@
 .cContainer {
   /* width: 60%; */
+  /* width: 100%; */
   margin: 1% auto;
 }
 .support-section {
@@ -7,7 +8,7 @@
   width: 80%;
   border-radius: 10px;
   margin: 0 auto;
-  padding-bottom: 2rem;
+  padding: 2rem;
   font-size: 1.4rem;
 }
 .shopIcons {
@@ -34,7 +35,7 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0);
   margin-top: 1%;
-  width: 100%;
+  width: 40%;
 }
 .support-icon:hover {
   border: 1px solid rgba(255, 255, 255, 0.87);
