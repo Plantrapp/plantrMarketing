@@ -89,14 +89,14 @@ video {
   box-sizing: border-box;
 }
 .App {
-  font-size: clamp(1em, 2vw, 1.1em);
+  font-size: clamp(1em, 2vw, 1.2em);
   text-align: center;
   background-color: #121212;
   color: rgba(255, 255, 255, 0.87);
   font-family: "Nunito", sans-serif;
 }
 h1 {
-  font-size: clamp(2.6rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 4vw, 3rem);
 }
 h2 {
   font-size: clamp(2.2rem, 5vw, 2.6rem);
@@ -115,18 +115,18 @@ h4 {
   color: #1ac197;
   font-family: MarketingScript;
 }
-.plantrFont-secondary {
+/* .plantrFont-secondary {
   font-family: "Nunito", sans-serif;
-}
+} */
 .btn-primary {
   background-color: #1ac197;
   /* background-color: #1ac19788; */
   border-color: white;
   font-family: "Nunito", sans-serif;
 }
-p {
+/* p {
   font-family: "Nunito", sans-serif;
-}
+} */
 .content {
   min-height: calc(100vh - 108px - 173px);
 }

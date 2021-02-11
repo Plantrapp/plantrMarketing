@@ -73,75 +73,77 @@ export default function About() {
         </div>
       </section>
       <hr />
-      <h2 className="plantrFont">Meet the Team</h2>
-      <div className="carousel-container">
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-          <Carousel.Item>
-            <div className="cItem">
-              <img className="avatar" src={Shane} />
-              <div className="bio">
-                <h3 className="plantrFont">Shane Davis</h3>
-                <h4>Founder, CEO</h4>
-                <p>
-                  Shane Davis is a Marine Corps Veteran with a background in
-                  security working with HMX-1. During his time in the service,
-                  Shane’s travels opened his eyes to the devastating effects of
-                  food scarcity for the worlds population. He was also a witness
-                  to the effects of over production of farm land and its natural
-                  resources. Through research and connection, Shane found
-                  permaculture as a solution for problems facing modern food
-                  production.
-                </p>
+      <section className="team">
+        <h2 className="plantrFont">Meet the Team</h2>
+        <div className="carousel-container">
+          <Carousel activeIndex={index} onSelect={handleSelect}>
+            <Carousel.Item>
+              <div className="cItem">
+                <img className="avatar" src={Shane} />
+                <div className="bio">
+                  <h3 className="plantrFont">Shane Davis</h3>
+                  <h4>Founder, CEO</h4>
+                  <p>
+                    Shane Davis is a Marine Corps Veteran with a background in
+                    security working with HMX-1. During his time in the service,
+                    Shane’s travels opened his eyes to the devastating effects
+                    of food scarcity for the worlds population. He was also a
+                    witness to the effects of over production of farm land and
+                    its natural resources. Through research and connection,
+                    Shane found permaculture as a solution for problems facing
+                    modern food production.
+                  </p>
+                </div>
               </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="cItem">
-              <img className="avatar" src={Sam} />
-              <div className="bio">
-                <h3 className="plantrFont">Samuel Brown</h3>
-                <h4>Web Developer</h4>
-                <p>
-                  Samuel Brown is a full-stack web developer who wants to use
-                  his skills and passion to create a better world. Sam enjoys
-                  sports, video games, music, and interesting technology.
-                </p>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="cItem">
+                <img className="avatar" src={Sam} />
+                <div className="bio">
+                  <h3 className="plantrFont">Samuel Brown</h3>
+                  <h4>Web Developer</h4>
+                  <p>
+                    Samuel Brown is a full-stack web developer who wants to use
+                    his skills and passion to create a better world. Sam enjoys
+                    sports, video games, music, and interesting technology.
+                  </p>
+                </div>
               </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="cItem">
-              <img className="avatar" src={Zave} />
-              <div className="bio">
-                <h3 className="plantrFont">Zavier Guadalupe</h3>
-                <h4>Web Developer</h4>
-                <p>
-                  Samuel Brown is a full-stack web developer who wants to use
-                  his skills and passion to create a better world. Sam enjoys
-                  sports, video games, music, and interesting technology.
-                </p>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="cItem">
+                <img className="avatar" src={Zave} />
+                <div className="bio">
+                  <h3 className="plantrFont">Zavier Guadalupe</h3>
+                  <h4>Web Developer</h4>
+                  <p>
+                    Samuel Brown is a full-stack web developer who wants to use
+                    his skills and passion to create a better world. Sam enjoys
+                    sports, video games, music, and interesting technology.
+                  </p>
+                </div>
               </div>
-            </div>
-          </Carousel.Item>
-        </Carousel>
-      </div>
-      <div className="avatarSelect">
-        <img
-          src={Shane}
-          onClick={() => setIndex(0)}
-          className={index === 0 ? "selected" : null}
-        />
-        <img
-          src={Sam}
-          onClick={() => setIndex(1)}
-          className={index === 1 ? "selected" : null}
-        />
-        <img
-          src={Zave}
-          onClick={() => setIndex(2)}
-          className={index === 2 ? "selected" : null}
-        />
-      </div>
+            </Carousel.Item>
+          </Carousel>
+        </div>
+        <div className="avatarSelect">
+          <img
+            src={Shane}
+            onClick={() => setIndex(0)}
+            className={index === 0 ? "selected" : null}
+          />
+          <img
+            src={Sam}
+            onClick={() => setIndex(1)}
+            className={index === 1 ? "selected" : null}
+          />
+          <img
+            src={Zave}
+            onClick={() => setIndex(2)}
+            className={index === 2 ? "selected" : null}
+          />
+        </div>
+      </section>
     </div>
   );
 }

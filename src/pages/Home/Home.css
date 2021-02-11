@@ -27,10 +27,16 @@ img {
   width: 20%;
 }
 .landing-container {
+  display: flex;
+  flex-direction: column;
   width: 40%;
+  /* border: 1px solid white; */
   margin-left: 10%;
   margin-top: 30vh;
   text-align: left;
+}
+.landing-container h1 {
+  margin-bottom: 2rem;
 }
 .how {
   width: 90%;
@@ -80,7 +86,7 @@ section {
 .icon {
   margin: 1% 0 2% 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .landing-container {
     width: 80%;
   }
@@ -105,6 +111,9 @@ section {
     padding: 0;
     width: 100%;
   }
+  .outer img {
+    width: 70%;
+  }
   .outer:nth-child(2) {
     flex-direction: column-reverse;
     margin: 0;
@@ -117,6 +126,6 @@ section {
     width: 80%;
   }
   .left {
-    margin-right: 0;
+    /* margin-right: 0; */
   }
 }

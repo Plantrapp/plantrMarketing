@@ -3,14 +3,15 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 2vw, 1.4rem);
   background-color: #ffffff00;
   z-index: 1;
   position: absolute;
   width: 100%;
 }
 header nav {
-  width: clamp(400px, 50vw, 700px);
+  border: 1px solid white;
+  width: clamp(500px, 60vw, 800px);
   display: flex;
   justify-content: space-around;
 }
@@ -45,14 +46,14 @@ nav {
   header img {
     width: 25%;
   }
-  button {
+  .dropdown-toggle {
     background: transparent;
     color: #1ac197;
     border: none;
     font-size: 2.5rem;
     padding: 0;
   }
-  button:focus {
+  .dropdown-toggle:focus {
     outline: none;
   }
   nav {
