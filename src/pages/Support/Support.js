@@ -17,9 +17,9 @@ export default function Support() {
     <div className="content nav-bar-padding ">
       <h1 className="plantrFont">Support Plantr</h1>
       <hr />
-      <section className="support-section">
+      <section className="support">
         <h3 className="plantrFont">Shop</h3>
-        <div className="cContainer">
+        <div className="carousel-container">
           <a href="https://teespring.com/stores/plantr?page=1" target="_blank">
             <Carousel onSelect={handleSelect} activeIndex={index} href="">
               <Carousel.Item>
@@ -60,6 +60,8 @@ export default function Support() {
             className={index === 2 ? "selected" : null}
           />
         </div>
+      </section>
+      <div className="support-link">
         <p>Support Plantr and pick up some sweet gear at the same time!</p>
         <button className="support-icon">
           <a
@@ -70,9 +72,9 @@ export default function Support() {
           </a>
           <p>Visit our shop</p>
         </button>
-      </section>
+      </div>
       <hr />
-      <section className="support-section">
+      <div className="support-link">
         <h3 className="plantrFont">Donate</h3>
         <p>
           Help us grow quicker by donating a few bucks a month. We appreciate
@@ -87,7 +89,7 @@ export default function Support() {
           </a>
           <p>Become a patron</p>
         </button>
-      </section>
+      </div>
     </div>
   );
 }

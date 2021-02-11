@@ -62,7 +62,7 @@ export default function Home() {
         0.5
       );
     //Bottom section
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 700) {
       gsap.from(how_card.current, {
         scrollTrigger: {
           trigger: ".how_card",
