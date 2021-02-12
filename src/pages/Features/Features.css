@@ -12,6 +12,11 @@
   flex-basis: 50%;
   margin: 0 1%;
 }
+
+.features-container {
+  height: 78vh;
+}
+
 .lists {
   text-align: left;
   list-style: none;
