@@ -58,6 +58,9 @@ export default function NavBar() {
             >
               Support Us
             </NavLink>
+            <button className="sign-in">
+              <a href="http://localhost:3000">Sign in</a>
+            </button>
           </nav>
         ) : (
           <button
@@ -113,6 +116,15 @@ export default function NavBar() {
           >
             Support Us
           </NavLink>
+          <a
+            href="http://localhost:3000"
+            // to="http://localhost:3000"
+            // activeStyle={activeStyle}
+            className="nav-link"
+            onClick={() => setShowMenu(!showMenu)}
+          >
+            Sign in
+          </a>
         </nav>
       ) : null}
     </>
