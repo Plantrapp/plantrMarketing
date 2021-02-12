@@ -3,7 +3,7 @@ import "./Features.css";
 
 export default function Features() {
   return (
-    <div className="nav-bar-padding">
+    <div className="nav-bar-padding features-container">
       <h1 className="plantrFont">Features</h1>
       <div className="features">
         <section>
