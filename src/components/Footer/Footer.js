@@ -5,9 +5,27 @@ import Form from "react-bootstrap/Form";
 import "./Footer.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import axios from "axios";
 
 export default function Footer() {
+  // const [subscribed, setSubscribed] = useState(false);
   const [formValue, setFormValue] = useState("");
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   axios
+  //     .post(
+  //       "https://www.getrevue.co/profile/sambrown0322/add_subscriber",
+  //       formValue
+  //     )
+  //     .then((res) => {
+  //       setFormValue("");
+  //       console.log(res);
+  //     })
+  //     .catch((err) => {
+  //       console.log("error", err);
+  //     });
+  // };
   return (
     <footer>
       <Container>
@@ -76,7 +94,78 @@ export default function Footer() {
         </Row>
       </Container>
       <div className="right">
-        <Form className="plantrFont-secondary">
+        {/* <div id="revue-embed">
+          <form
+            action="https://www.getrevue.co/profile/sambrown0322/add_subscriber"
+            method="post"
+            id="revue-form"
+            name="revue-form"
+            target="_blank"
+          >
+            <div class="revue-form-group">
+              <label for="member_email">Email address</label>
+              <input
+                class="revue-form-field"
+                placeholder="Your email address..."
+                type="email"
+                name="member[email]"
+                id="member_email"
+              />
+            </div>
+            <div class="revue-form-group">
+              <label for="member_first_name">
+                First name <span class="optional">(Optional)</span>
+              </label>
+              <input
+                class="revue-form-field"
+                placeholder="First name... (Optional)"
+                type="text"
+                name="member[first_name]"
+                id="member_first_name"
+              />
+            </div>
+            <div class="revue-form-group">
+              <label for="member_last_name">
+                Last name <span class="optional">(Optional)</span>
+              </label>
+              <input
+                class="revue-form-field"
+                placeholder="Last name... (Optional)"
+                type="text"
+                name="member[last_name]"
+                id="member_last_name"
+              />
+            </div>
+            <div class="revue-form-actions">
+              <input
+                type="submit"
+                value="Subscribe"
+                name="member[subscribe]"
+                id="member_submit"
+              />
+            </div>
+            <div class="revue-form-footer">
+              By subscribing, you agree with Revue’s{" "}
+              <a target="_blank" href="https://www.getrevue.co/terms">
+                Terms
+              </a>{" "}
+              and{" "}
+              <a target="_blank" href="https://www.getrevue.co/privacy">
+                Privacy Policy
+              </a>
+              .
+            </div>
+          </form>
+        </div> */}
+
+        <Form
+          className="plantrFont-secondary"
+          action="https://www.getrevue.co/profile/sambrown0322/add_subscriber"
+          method="post"
+          id="revue-form"
+          name="revue-form"
+          target="_blank"
+        >
           <Form.Row className="align-items-center">
             <Col xs="auto">
               <Form.Label htmlFor="subscribe" className="plantrFont-secondary ">
@@ -88,7 +177,8 @@ export default function Footer() {
             <Col xs="auto">
               <Form.Control
                 type="email"
-                name="subscribe"
+                name="member[email]"
+                id="member_email"
                 value={formValue}
                 onChange={(e) => setFormValue(e.target.value)}
                 placeholder="Enter E-mail Address"
