@@ -3,19 +3,45 @@ import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 import "./Contact.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
+import axios from "axios";
 import { gsap } from "gsap";
 
+const initialFormValues = {
+  email: "",
+  name: "",
+  message: "",
+};
+
 export default function Contact() {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
+  const [formValues, setFormValues] = useState(initialFormValues);
   const main = useRef();
+
   useEffect(() => {
     gsap.from(main.current, {
       opacity: 0,
       duration: 1.5,
     });
-  });
+  }, []);
+
+  const handleChange = (e) => {
+    setFormValues({
+      ...formValues,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("https://formspree.io/f/xbjpeqlz", formValues)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+    setFormValues(initialFormValues);
+  };
 
   return (
     <div className="page-container">
@@ -67,24 +93,32 @@ export default function Contact() {
             </div>
 
             <div className="contact-left">
-              <Form>
+              <Form onSubmit={handleSubmit}>
                 <Form.Group>
                   <input
-                    type="text"
-                    name="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Name"
+                    type="hidden"
+                    name="_subject"
+                    value="New email from contact page"
                     className="inputting"
                   />
                 </Form.Group>
                 <Form.Group>
                   <input
                     type="email"
-                    name="name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    name="email"
+                    value={formValues.email}
+                    onChange={handleChange}
                     placeholder="Email"
+                    className="inputting"
+                  />
+                </Form.Group>
+                <Form.Group>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formValues.name}
+                    onChange={handleChange}
+                    placeholder="Name"
                     className="inputting"
                   />
                 </Form.Group>
@@ -92,8 +126,8 @@ export default function Contact() {
                   <textarea
                     type=""
                     name="message"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
+                    value={formValues.message}
+                    onChange={handleChange}
                     placeholder="Message"
                     className="inputting"
                   />
